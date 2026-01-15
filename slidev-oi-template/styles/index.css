@@ -1,0 +1,68 @@
+:root {
+  --bar-blue: #262a89;
+  --title-blue: #3438b3;
+}
+
+/* 封面不留默认 padding */
+.slidev-layout.cover {
+  padding: 0 !important;
+}
+
+/* 封面布局容器 */
+.cover-wrap {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+}
+
+/* 中间大蓝条（圆角+阴影） */
+.cover-titlebar {
+  width: min(1100px, 86vw);
+  background: var(--title-blue);
+  border-radius: 16px;
+  box-shadow: 0 14px 18px rgba(0, 0, 0, 0.35);
+  padding: 36px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover-title {
+  color: #fff;
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* 封面下方文字 */
+.cover-meta {
+  text-align: center;
+  color: #111;
+}
+
+.cover-author {
+  font-size: 32px;
+  font-weight: 650;
+  margin-bottom: 18px;
+}
+
+.cover-course {
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+
+.cover-email {
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 34px;
+}
+
+.cover-date {
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
